@@ -2,8 +2,7 @@
   text-align: center;
 }
 
-didomi-if-authenticated,
-didomi-if-not-authenticated {
+didomi-if-authenticated {
   max-width: 800px;
   margin: auto;
   display: block;
