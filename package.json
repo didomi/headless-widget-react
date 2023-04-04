@@ -1,5 +1,6 @@
 {
   "name": "react-app-widgets",
+  "homepage": "https://didomi.github.io/headless-widget-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
