@@ -24,7 +24,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>React App</title>
+
+    <!-- IMPORTANT: Hide those custom components until they are defined. Avoid flickering effect -->
+    <style>
+      didomi-if-authenticated:not(:defined) {
+        display: none;
+      }
+      didomi-if-not-authenticated:not(:defined) {
+        display: none;
+      }
+      didomi-auth-headless:not(:defined) {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +58,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div className="didomi-overlay-container"></div>
   </body>
+
+  <script>
+    window.didomiConfig = {
+      apiKey: "9bf8a7e4-db9a-4ff2-a45c-ab7d2b6eadba",
+      app: { apiKey: "9bf8a7e4-db9a-4ff2-a45c-ab7d2b6eadba" },
+      components: {
+        version: 2,
+      },
+      user: { shouldReadTokenFromURL: true },
+      widgets: [],
+    };
+  </script>
+  <script
+    type="text/javascript"
+    async="true"
+    charset="utf-8"
+    src="https://sdk.privacy-center.org/v2/loader.js"
+  ></script>
 </html>
