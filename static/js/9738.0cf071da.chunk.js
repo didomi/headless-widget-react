@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_app_widgets=self.webpackChunkreact_app_widgets||[]).push([[9738],{9738:function(e,t,a){a.r(t),a.d(t,{didomi_nav_tab_headers:function(){return s}});var n=a(5671),r=a(3144),i=a(221),s=function(){function e(t){(0,n.Z)(this,e),(0,i.r)(this,t)}return(0,r.Z)(e,[{key:"render",value:function(){return(0,i.h)(i.a,{class:"didomi-nav-tab-headers"},(0,i.h)("slot",null))}}]),e}();s.style=".didomi-nav-tab-headers{display:grid;grid-auto-columns:1fr;grid-auto-flow:column}"}}]);
+//# sourceMappingURL=9738.0cf071da.chunk.js.map

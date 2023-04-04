@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_app_widgets=self.webpackChunkreact_app_widgets||[]).push([[2067],{2067:function(e,t,i){i.r(t),i.d(t,{didomi_tab_panels:function(){return r}});var n=i(5671),a=i(3144),s=i(221),r=function(){function e(t){(0,n.Z)(this,e),(0,s.r)(this,t)}return(0,a.Z)(e,[{key:"render",value:function(){return(0,s.h)(s.a,{class:"didomi-tab-panels"},(0,s.h)("slot",null))}}]),e}();r.style=".didomi-tab-panels{width:100%;height:100%;position:relative;display:flex;overflow-x:hidden}"}}]);
+//# sourceMappingURL=2067.75f6f5ac.chunk.js.map

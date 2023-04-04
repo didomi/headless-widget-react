@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_app_widgets=self.webpackChunkreact_app_widgets||[]).push([[1521],{1521:function(t,e,n){n.r(e),n.d(e,{didomi_select_options:function(){return u}});var i=n(5671),s=n(3144),r=n(221),u=function(){function t(e){(0,i.Z)(this,t),(0,r.r)(this,e)}return(0,s.Z)(t,[{key:"render",value:function(){return(0,r.h)(r.a,{class:"didomi-select-options"},(0,r.h)("slot",null))}}]),t}()}}]);
+//# sourceMappingURL=1521.97e8ae3a.chunk.js.map

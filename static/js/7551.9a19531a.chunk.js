@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_app_widgets=self.webpackChunkreact_app_widgets||[]).push([[7551],{7551:function(e,t,i){i.r(t),i.d(t,{didomi_collapsible_tab_heading:function(){return r}});var n=i(5671),a=i(3144),l=i(221),r=function(){function e(t){(0,n.Z)(this,e),(0,l.r)(this,t)}return(0,a.Z)(e,[{key:"render",value:function(){return(0,l.h)(l.a,{class:"didomi-collapsible-tab-heading"},(0,l.h)("slot",null))}}]),e}();r.style=".didomi-collapsible-tab-heading{width:100%;background-color:transparent}"}}]);
+//# sourceMappingURL=7551.9a19531a.chunk.js.map
