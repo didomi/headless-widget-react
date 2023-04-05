@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/headless-widget-react/static/css/main.4562b66f.css",
-    "main.js": "/headless-widget-react/static/js/main.92846c6d.js",
+    "main.js": "/headless-widget-react/static/js/main.d83eb785.js",
     "static/js/7929.3733d684.chunk.js": "/headless-widget-react/static/js/7929.3733d684.chunk.js",
     "static/js/6699.0af4f09f.chunk.js": "/headless-widget-react/static/js/6699.0af4f09f.chunk.js",
     "static/js/4728.9162ade1.chunk.js": "/headless-widget-react/static/js/4728.9162ade1.chunk.js",
@@ -138,7 +138,7 @@
     "static/js/5688.363fa00d.chunk.js": "/headless-widget-react/static/js/5688.363fa00d.chunk.js",
     "index.html": "/headless-widget-react/index.html",
     "main.4562b66f.css.map": "/headless-widget-react/static/css/main.4562b66f.css.map",
-    "main.92846c6d.js.map": "/headless-widget-react/static/js/main.92846c6d.js.map",
+    "main.d83eb785.js.map": "/headless-widget-react/static/js/main.d83eb785.js.map",
     "7929.3733d684.chunk.js.map": "/headless-widget-react/static/js/7929.3733d684.chunk.js.map",
     "6699.0af4f09f.chunk.js.map": "/headless-widget-react/static/js/6699.0af4f09f.chunk.js.map",
     "4728.9162ade1.chunk.js.map": "/headless-widget-react/static/js/4728.9162ade1.chunk.js.map",
@@ -276,6 +276,6 @@
   },
   "entrypoints": [
     "static/css/main.4562b66f.css",
-    "static/js/main.92846c6d.js"
+    "static/js/main.d83eb785.js"
   ]
 }
