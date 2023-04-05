@@ -19,30 +19,33 @@ function Sections({ container, entities }) {
   };
 
   useEffect(() => {
+    const setConsentsLoadingEvent = () => {
+      setLoading(true);
+    };
+    const setConsentsFailureEvent = (event) => {
+      setLoading(false);
+      toast.error("Sorry, an error occurred: consent has not been updated", {
+        toastId: "pending-consents-error",
+      });
+    };
+    const setConsentsSuccessEvent = (event) => {
+      setLoading(false);
+      toast.success("Consent has been saved successfully!", {
+        toastId: "pending-consents-success",
+      });
+    };
     // IMPORTANT: You can also listen to specific pending consents events (loading, success, error)
-    const setConsentsLoadingEvent = document.addEventListener(
+    document.addEventListener(
       "didomi:save-pending-consents-loading",
-      () => {
-        setLoading(true);
-      }
+      setConsentsLoadingEvent
     );
-    const setConsentsFailureEvent = document.addEventListener(
+    document.addEventListener(
       "didomi:save-pending-consents-error",
-      (event) => {
-        setLoading(false);
-        toast.error("Sorry, an error occurred: consent has not been updated", {
-          toastId: "pending-consents-error",
-        });
-      }
+      setConsentsFailureEvent
     );
-    const setConsentsSuccessEvent = document.addEventListener(
+    document.addEventListener(
       "didomi:save-pending-consents-success",
-      (event) => {
-        setLoading(false);
-        toast.success("Consent has been saved successfully!", {
-          toastId: "pending-consents-success",
-        });
-      }
+      setConsentsSuccessEvent
     );
 
     return () => {

@@ -13,19 +13,22 @@ function Login({ container }) {
   const [emailIsSent, setEmailIsSent] = useState(false);
 
   useEffect(() => {
+    const sendAuthenticationLoadingEvent = () => setLoading(true);
+    const sendAuthenticationSuccessEvent = () => {
+      setLoading(false);
+      setEmailIsSent(true);
+      setEmail("");
+    };
+
     // IMPORTANT: You can also listen to specific auth events (loading, success, error)
-    const sendAuthenticationLoadingEvent = document.addEventListener(
+    document.addEventListener(
       "didomi:send-authentication-loading",
-      () => setLoading(true)
+      sendAuthenticationLoadingEvent
     );
 
-    const sendAuthenticationSuccessEvent = document.addEventListener(
+    document.addEventListener(
       "didomi:send-authentication-success",
-      () => {
-        setLoading(false);
-        setEmailIsSent(true);
-        setEmail("");
-      }
+      sendAuthenticationSuccessEvent
     );
 
     return () => {

@@ -26,14 +26,15 @@ function PreferenceDropdown({ container, entities, purposeId, preferenceId }) {
   const preferenceRef = useRef(null);
 
   useEffect(() => {
+    const setConsentsSuccessEvent = (event) => {
+      toast.success("Consent has been saved successfully!", {
+        toastId: "consents-success",
+      });
+    };
     // IMPORTANT: You can also listen to specific consents events (loading, success, error)
-    const setConsentsSuccessEvent = document.addEventListener(
+    document.addEventListener(
       "didomi:set-consents-success",
-      (event) => {
-        toast.success("Consent has been saved successfully!", {
-          toastId: "consents-success",
-        });
-      }
+      setConsentsSuccessEvent
     );
 
     return () => {
